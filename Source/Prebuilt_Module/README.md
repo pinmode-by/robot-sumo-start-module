@@ -10,10 +10,10 @@ For those who want to build their own modules based on this code and microcontro
 Using the following avrdude command is used when programming the prebuilt modules. It utilizes the AvrISP MKII programmer, so if you use any other programmer, change the programming command accordingly. Make sure to be in the correct folder, or replace "StartModule.hex" to the correct path to your hex-file.
 
 Step 1:
-avrdude	-p t13a -c usbasp -P usb -B 10 -Ulfuse:w:0x79:m -Uhfuse:w:0xef:m
+<B>avrdude	-p t13a -c usbasp -P usb -B 10 -Ulfuse:w:0x79:m -Uhfuse:w:0xef:m</B>
 
 Step 2:
-avrdude	-p t13a -c usbasp -P usb -Uflash:w:StartModule.hex:a 
+<B>avrdude	-p t13a -c usbasp -P usb -Uflash:w:StartModule.hex:a </B>
 
 These fuse bits sets the following. The ones marked (important) have the potential to brick your system if set incorrectly. Set them as below and you should be fine:
 - No brownout detection
