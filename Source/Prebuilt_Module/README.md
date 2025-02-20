@@ -11,6 +11,10 @@ Using the following avrdude command is used when programming the prebuilt module
 
 avrdude	-pt13 -cavrispmkII -Pusb -u -Uflash:w:StartModule.hex:a -Ulfuse:w:0x79:m -Uhfuse:w:0xef:m
 
+avrdude	-p t13a -c usbasp -P usb -B 10 -Ulfuse:w:0x79:m -Uhfuse:w:0xef:m
+
+avrdude	-p t13a -c usbasp -P usb -Uflash:w:StartModule.hex:a 
+
 These fuse bits sets the following. The ones marked (important) have the potential to brick your system if set incorrectly. Set them as below and you should be fine:
 - No brownout detection
 - No clock division by 8
