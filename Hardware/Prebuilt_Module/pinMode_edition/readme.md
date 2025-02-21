@@ -1,1 +1,3 @@
-Component list:
+RobotChallenge start module by pinMode:
+=====
+![PCB view]( /Hardware/Prebuilt_Module/pinMode_edition/img/PCB_view.jpg)
